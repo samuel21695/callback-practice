@@ -1,7 +1,6 @@
 words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 
-// parameter 하나일 경우 괄호 필요 x
-newWords = words.filter(element=>{
-  return element.length > 6;
-});
+// 코드가 한줄인 경우 중괄호와 return도 필요 없음
+newWords = words.filter(element=> element.length > 6);
+
 console.log(newWords);
