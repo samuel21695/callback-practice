@@ -1,7 +1,12 @@
 // first() 함수 다음에 second()함수 실행하고 싶으면?
-function first(second){
+
+// 아래와 같이 할 수도 있는데 callback함수를 이용하는 이유는 뭘까
+// first()
+// second()
+
+function first(callback){
   console.log(1)
-  second()
+  callback()
 }
 
 function second(){
